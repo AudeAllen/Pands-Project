@@ -3,6 +3,7 @@
 # https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
 # https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 # https://rpubs.com/Karolina_G/848706
+# https://vitalflux.com/python-creating-scatter-plot-with-iris-dataset/
 
 # This assignment required us to produce summary statistics for the whole dataset, as well as,
 # per category of a categorical variable. 
@@ -25,22 +26,24 @@ data.head()
 # Print the number of rows and columns in dataset
 print(data.shape)
 
-# Print summary of each variable using pandas describe function
-# This is an overall summary of all variables
-
+# The below print statement groups the overall summary statistics for the four variables
+#  for all of the species of Iris plant   
 df = pd.DataFrame(data)
 data.describe()
-print(df.describe())
 
-#Write pandas summary to text file
+ 
+#Write both summaries to two separate text files
 IRIS_df = (df.describe())
-IRIS_df.to_string('IrisVariableSummary.txt')
+IRIS_df.to_string('OverallIrisVariableSummary.txt')
 
+# The below print statement groups the summary statistics for each species/class of iris plant         
+
+IRIS_df_all = (df.groupby("species").describe())
+IRIS_df_all.to_string('SummarybySpeciesIrisVariable.txt')
+ 
 
 # Output number of species
 data.species.value_counts()
-
-
 
 #Output histogram of each variable to .png file 
 #sepallength
@@ -53,7 +56,7 @@ plt.title("Sepal Length in cm")
 plt.xlabel("Sepal_Length_cm")
 plt.ylabel("Count")
 plt.savefig('sepallength.png') # Save to PNG file
-plt.show()
+#plt.show()
 
 #sepalwidth
 plt.figure(figsize = (10, 7))
@@ -91,16 +94,34 @@ plt.show()
 
 #boxpplot sepallength
 sns.boxplot( x=data["species"], y=data["sepallength"], palette="Blues") .set(title='BoxPlot Sepal Length');
+plt.savefig('sepallengthboxplot.png') # Save to PNG file
 plt.show()
 
 #boxpplot sepalwidth
-sns.boxplot( x=data["species"], y=data["sepalwidth"], palette="pastel") .set(title='BoxPlot Sepal Width');
+sns.boxplot( x=data["species"], y=data["sepalwidth"], palette="Blues") .set(title='BoxPlot Sepal Width');
+plt.savefig('sepalwidthboxplot.png') # Save to PNG file
 plt.show()
 
 #boxpplot petallength
-sns.boxplot( x=data["species"], y=data["petallength"], palette="deep") .set(title='BoxPlot Petal Length');
+sns.boxplot( x=data["species"], y=data["petallength"], palette="Blues") .set(title='BoxPlot Petal Length');
+plt.savefig('petallengthboxplot.png') # Save to PNG file
 plt.show()
 
 #boxpplot petalwidth
-sns.boxplot( x=data["species"], y=data["petalwidth"], palette="muted") .set(title='BoxPlot Petal Width');
+sns.boxplot( x=data["species"], y=data["petalwidth"], palette="Blues") .set(title='BoxPlot Petal Width');
+plt.savefig('petalwidthboxplot.png') # Save to PNG file 
 plt.show()
+
+
+# Scatterplot of all variables in the Iris Dataset
+
+sns.pairplot(data, hue="species")
+plt.savefig('Scatterplot.png') # Save to PNG file 
+plt.show()
+
+# Correlation between all four variables on the Iris Dataset
+
+data.groupby("species").corr()
+CorrelationMatrix = data.groupby("species").corr()
+print(CorrelationMatrix)
+CorrelationMatrix.to_string('CorrelationMatrix.txt')
