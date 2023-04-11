@@ -17,7 +17,7 @@ I am going to start by describing the variables and descriptive statistics relat
 I will include correlation and regression analysis in my analysis.	
 I am going to be using Visual Studio Code to write my python code and readme files. I had some trouble downloading Jupyter Notebook so I will be doing all of my commenting and descriptions of my code and graphs in my README file.
 The main python script is called analysis.py. 
-I hope my analysis of this dataset will help give me more insight and knowledge of python and off machine learning.
+I hope my analysis of this dataset will help give me more insight and knowledge of python and also machine learning.
 
 
 
@@ -26,10 +26,43 @@ I hope my analysis of this dataset will help give me more insight and knowledge 
 -	Visual Studio Code
 -	Python 3
 -	Github - https://github.com/AudeAllen/Pands-Project.git
+How to run Python code 
+Need to fill out a bit more – discussion about pandas, matplotlib, seaborn 
 
+3.	Background on Iris Dataset
+There is a lot of information and analyses done on the Iris dataset. The British statistician Ronald Fisher published the dataset in 1936.
+As mentioned in my introduction iris dataset gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica.
+
+
+See pictures of each species of flower below.
+
+ 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+References
+
+http://rstudio-pubs-static.s3.amazonaws.com/450733_9a472ce9632f4ffbb2d6175aaaee5be6.html
+
+
+
+	
 
 	 
-
-
-
 
