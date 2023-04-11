@@ -18,10 +18,12 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+  
 
 # Read in CSV file
 data = pd.read_csv('iris_csv.csv')
-data.head()
+
+print (data.head())
 
 # Print the number of rows and columns in dataset
 print(data.shape)
