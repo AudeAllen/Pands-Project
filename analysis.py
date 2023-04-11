@@ -14,7 +14,7 @@
 
 #Author: Audrey Allen
 
-import numpy as np
+import numpy as np  
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -46,7 +46,7 @@ IRIS_df_all.to_string('SummarybySpeciesIrisVariable.txt')
 data.species.value_counts()
 
 #Output histogram of each variable to .png file 
-#sepallength
+#sepallength  
 
 plt.figure(figsize = (10, 7))
 x = data["sepallength"]  
