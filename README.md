@@ -41,14 +41,13 @@ This dataset is a simple dataset which contains 5 variables and thus I can demon
 In this project we will see various features of the dataset including data distribution, correlations between certain features and the presence of outliers.
 What we will see from my analysis is that one species of iris (Iris Setosa) is linearly separable from the other two. The other two classes are not linearly separable. Linearly separable applies to a set of points. Two sets are said to be linearly separable if a line can be drawn that separates the points such that a set points is on one side of the line and another set of points is on the other side of the line.
 See pictures of each species of flower below.
-
- 	
+![image](https://user-images.githubusercontent.com/123590406/232002418-6d6afb38-e5a9-4972-b951-25ad3b5c8613.png)
+	
 
 
 Basic Analysis using Panda Dataframe
 First thing I need to do is read in the Iris dataset. It is in .csv format. The tool I am using for this is Visual studio code. All of  my code and files will be uploaded to github after I have made any changes.
-data = pd.read_csv('iris_csv.csv')
-data.head()
+![image](https://user-images.githubusercontent.com/123590406/232002661-410375c0-00f6-4950-8321-8f117f212b30.png)
 To run my python program go into Visual Studio Code and go to the directory C:\Users\audreyallen\Desktop\Pands1\Pands-Project and type in py analysis.py.
 Using the Pandas dataframe describe method I can display the overall summary statistics for all four variables for all species of the Iris plant.  The describe () method returns 	statistics on the numerical data in the .csv file.
 df = pd.DataFrame(data)
@@ -68,7 +67,9 @@ max - the maximum value
 
 
 Summary Observations on Overall Summary Statistics
- 
+
+![image](https://user-images.githubusercontent.com/123590406/232002741-b30b3a87-639e-448f-9d3d-414e458218db.png)
+
 
 -	Count - There are no null values as the count shows 150 of each variable
 -	Mean - The Mean of the sepallength is greater than the mean of the other three variables. The petalwidth column has the lowest average measurements
@@ -78,11 +79,10 @@ Summary Observations on Overall Summary Statistics
 -	50% - This is the median value. The median should be close to the mean value. If it is not then it signifies that there  maybe outliers and that the data is skewed.   Petalength has the largest difference between mean and median at 0.57. This is evident in the fact that petallength also has the highest standard deviation so the spread of the data for this variable varies the most.
 -	75% - 	This is sometimes known as the uperquartile range and signifies the percentage of values that are 75% below that value and 25% below that value.
 -	Max – Sepallength has the largest measurement for all four species at 7.9. Petalwidth has the lowest at 2.5. Again what we can see from the data is that the variable with the largest difference between the min and max value is again petallength which ties into the standard deviation being so high.
-	sepallength	Sepalwidth	petallength	petallength
-Min	4.3	2.0	1.0	0.10
-Max	7.9	4.4	6.9	2.5
-Difference	3.6	2.4	5.9	2.4
- 	
+
+![image](https://user-images.githubusercontent.com/123590406/232003014-ac5fb310-90dc-44f3-82ee-e9e855864ee3.png)
+	
+	
 Summary Observations grouped by Species
 Using Pandas dataframe again this summary by species and variable can be completed. The dataframe is grouped by species and using the describe  method again the summary statistics are output. The output of the summary statistics grouped by species is output to a  text file called ‘SummarySpeciesIrisVariable.txt’. See below for sample code and output.
 IRIS_df_all = (df.groupby("species").describe())
