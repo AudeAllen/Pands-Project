@@ -49,50 +49,60 @@ data.species.value_counts()
 
 #Output histogram of each variable to .png file 
 #sepallength  
+#Each species displays in a different colour as it is then clearer to the species which is linearly separable from the other two 
+#species - Iris-setosa is linearly separable from both Iris-versicolor and Iris-virginica
 
-x = [data.sepallength[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
-plt.hist(x, 8, density=True, histtype='bar', stacked=True)
-plt.title("Histogram of Variable Sepal Length - Iris Dataset")
+#sepallength
+plt.figure(figsize = (10, 7))
+x =[data.sepallength[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
+plt.hist(x,20, histtype='bar', stacked=True)
+plt.legend(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
 plt.title("Sepal Length in cm")
 plt.xlabel("Sepal_Length_cm")
 plt.ylabel("Count")
-plt.legend(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
-plt.savefig('sepallength.png') # Save to PNG file
+plt.savefig('sepallengthhist.png') # Save to PNG file
 plt.show()
+
 
 
 #sepalwidth
-x = [data.sepalwidth[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
-plt.hist(x, 8, density=True, histtype='bar', stacked=True)
-plt.title("Histogram of Variable Sepal Width - Iris Dataset")
+plt.figure(figsize = (10, 7))
+x =[data.sepalwidth[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
+plt.hist(x,20, histtype='bar', stacked=True)
+plt.legend(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
 plt.title("Sepal Width in cm")
 plt.xlabel("Sepal_Width_cm")
 plt.ylabel("Count")
-plt.legend(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
-plt.savefig('sepalwidth.png') # Save to PNG file
+plt.savefig('sepalwidthhist.png') # Save to PNG file
 plt.show()
 
+
+
 #petallength
-x = [data.petallength[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
-plt.hist(x, 8, density=True, histtype='bar', stacked=True)
-plt.title("Histogram of Variable Petal Length - Iris Dataset")
+plt.figure(figsize = (10, 7))
+x =[data.petallength[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
+plt.hist(x,20, histtype='bar', stacked=True)
+plt.legend(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
 plt.title("Petal Length in cm")
 plt.xlabel("Petal_Length_cm")
 plt.ylabel("Count")
-plt.legend(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
-plt.savefig('petallength.png') # Save to PNG file
+plt.savefig('petallengthhist.png') # Save to PNG file
 plt.show()
 
+
+
 #petalwidth
-x = [data.petalwidth[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
-plt.hist(x, 8, density=True, histtype='bar', stacked=True)
-plt.title("Histogram of Variable Petal Width - Iris Dataset")
+plt.figure(figsize = (10, 7))
+x =[data.petalwidth[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
+plt.hist(x,20, histtype='bar', stacked=True)
+plt.legend(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
 plt.title("Petal Width in cm")
 plt.xlabel("Petal_Width_cm")
 plt.ylabel("Count")
-plt.legend(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
-plt.savefig('petalwidth.png') # Save to PNG file
+plt.savefig('petalwidthhist.png') # Save to PNG file
 plt.show()
+
+
 
 #boxpplot sepallength
 sns.boxplot( x=data["species"], y=data["sepallength"], palette="Blues") .set(title='BoxPlot Sepal Length');
