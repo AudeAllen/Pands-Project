@@ -180,6 +180,8 @@ A boxplot can be used for either univariate or bivariate analysis.  For my analy
 ![image](https://user-images.githubusercontent.com/123590406/232837122-b00e4e01-72c6-4a89-a10f-cb11c7991660.png)
 
 
+**Boxplot Observations**
+From the above graphs we can see the iris-setosa has the lowest in all measurements except sepal width where it has the largest measurements. The little diamond shape outside the boxplot is an indicator of an outlier. There are not very many outliers so it won’t have a significant impact on my analysis. The Iris-setosa has the most outliers.
 
 	
 
