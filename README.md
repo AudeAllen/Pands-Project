@@ -185,17 +185,35 @@ From the above graphs we can see the iris-setosa has the lowest in all measureme
 
 	
 
+**Bivariate Analysis on the Iris Dataset**
+
+**Scatterplots of the Iris Dataset**
+
+A scatter plot is a useful plot as it visually shows how the different variables or features in the data set correlate with one another.  It is a graph of the ordered pairs of two variables. One variable is plotted on the x-axis while the other variable is plotted on the y-axis. A scatter plot can be used to visualize relationships between numerical variables such as the petal measurements and the sepal measurements in the Iris data set.
+There is a function in the seaborn library called the Pairplot() function. This function plots pairwise relationships between variables with the use of scatterplots. It is a very useful visual to see correlations between certain variables. We can also see if the data is linearly separable which we know it is from previous discussions. 
+
+![image](https://user-images.githubusercontent.com/123590406/232863012-8c12315e-d8ce-4e29-a637-23b398799a23.png)
+As well as showing the visual of the Pairplot I have created a correlation matrix which shows the correlation between all four variables in the Iris Dataset. A correlation matrix involves a rows and columns table that shows the variables. Every cell in a matrix contains the correlation coefficient. 1 is considered a strong relationship between variables, 0 a neutral relationship and -1 is not a strong relationship. 
+I think it would be useful to detail the correlation matrix in conjunction with the Pairplot.
+
+The correlation matrix is contained in my analysis.py python program. See below. I have output the results table to a text file called CorrelationMatrix.txt
 
 
+![image](https://user-images.githubusercontent.com/123590406/232863084-933b98de-ea95-4d59-bd68-4e7e55014977.png)
 
 
+**Correlation Matrix**
+
+![image](https://user-images.githubusercontent.com/123590406/232863145-d0696667-fbfe-4577-99ac-973a7a7e3958.png)
+
+**Pair Plot **
+
+The Pairplot has been output to a .png file called Scatterplot.png.  See below screenshot.
+
+![image](https://user-images.githubusercontent.com/123590406/232863207-406bc692-f7d2-4214-840a-1159340c26c2.png)
 
 
-
-
-
-
-
+**Observations of the Pairplot and Correlation Matrix**
 
 
 
