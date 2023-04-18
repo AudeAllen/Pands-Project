@@ -215,6 +215,11 @@ The Pairplot has been output to a .png file called Scatterplot.png.  See below s
 
 **Observations of the Pairplot and Correlation Matrix**
 
+A linearly separable data set is one where the observations or data points can be separated by a straight line drawn through the data. We can see that the Iris dataset is indeed linearly separable and that the iris-setosa is separable from the other two species.  However there is some overlap between iris-versicolor and iris-virginica. 
+There is a strong correlation on the sepal length and the sepal width for the Iris-Setosa. This can be seen in the correlation matrix where the correlation coefficient is 0.74. This is not the case for the other two species where the correlation coefficient is 0.5 and 0.45 for both the versicolor and virginica respectively.
+
+There is a strong correlation also between the sepal length and the petal length for the iris-virginica at 0.86 and also between the petal length and petal width for the iris- versicolor at 0.78.	 The least correlation is between petal length and sepal width for the iris-setosa at 0.17.
+
 
 
 
