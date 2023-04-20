@@ -52,6 +52,7 @@ data.species.value_counts()
 #Each species displays in a different colour as it is then clearer to the species which is linearly separable from the other two 
 #species - Iris-setosa is linearly separable from both Iris-versicolor and Iris-virginica
 
+
 #sepallength
 plt.figure(figsize = (10, 7))
 x =[data.sepallength[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
@@ -91,7 +92,7 @@ plt.show()
 
 
 
-#petalwidth
+#petalwidth 
 plt.figure(figsize = (10, 7))
 x =[data.petalwidth[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
 plt.hist(x,20, histtype='bar', stacked=True)
@@ -101,6 +102,7 @@ plt.xlabel("Petal_Width_cm")
 plt.ylabel("Count")
 plt.savefig('petalwidthhist.png') # Save to PNG file
 plt.show()
+
 
 
 
@@ -125,7 +127,7 @@ plt.savefig('petalwidthboxplot.png') # Save to PNG file
 plt.show()
 
 
-# Scatterplot of all variables in the Iris Dataset
+# Pairplot of all variables in the Iris Dataset
 
 sns.pairplot(data, hue="species")
 plt.savefig('Scatterplot.png') # Save to PNG file 

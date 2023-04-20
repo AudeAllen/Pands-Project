@@ -51,45 +51,15 @@ data.species.value_counts()
 #sepallength  
 
 
+#sepallength
 fig, ax = plt.subplots()
-x = [data.sepallength[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
-plt.hist(x, 10, density=True, histtype='bar', stacked=True)
-#plt.ylim(0, None)
-plt.title("Histogram of Variable Sepal Length - Iris Dataset")
-plt.title("Sepal Length in cm")
-plt.xlabel("Sepal_Length_cm")
-plt.ylabel("Count")
-plt.legend(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
-plt.savefig('sepallength.png') # Save to PNG file
-plt.show()
-
-
 # plot histogram
-colors = ['red', 'tan', 'lime']
-plt.figure(figsize = (10, 7))
-x = [data.sepallength[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
-#y =plt.yticks(range(0, 30, 5))
-#plt.hist(x,20,density=True, histtype='bar', stacked=True)
-plt.hist(x,20,density=True)
+ax.hist(data['sepallength'])
 # set title and labels
-plt.title("Histogram of Variable Sepal Length - Iris Dataset")
 plt.title("Sepal Length in cm")
 plt.xlabel("Sepal_Length_cm")
-plt.ylabel("Count")
-plt.legend(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
-plt.savefig('sepallength.png') # Save to PNG file
-plt.show()
-
-
-
-
-
-plt.figure(figsize = (10, 7))
-x =[data.sepallength[data.species==sp_name] for sp_name in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']]
-plt.hist(x,20, histtype='bar', stacked=True)
-plt.title("Sepal Length in cm")
-plt.xlabel("Sepal_Length_cm")
-plt.ylabel("Count")
+plt.ylabel("Frequency")
+plt.savefig('sepallengthhist.png') # Save to PNG file
 plt.show()
 
 
