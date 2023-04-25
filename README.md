@@ -1,4 +1,10 @@
-**Analysis on the Iris Dataset **
+# Table of contents
+* [Weekly tasks](#weekly-tasks)
+
+
+
+
+**Analysis on the Iris Dataset**
 1.	Introduction to Project
 
 **Problem Statement –**
