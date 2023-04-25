@@ -1,13 +1,13 @@
-# Table of contents
-* [Weekly tasks](#weekly-tasks)
-
-
-
-
 **Analysis on the Iris Dataset**
-1.	Introduction to Project
 
-**Problem Statement –**
+# Table of contents
+* [1 Introduction Project](#1-introduction-project)
+ 	* [Problem Statement](#problem-statement)
+
+
+1 Introduction Project 
+======
+### ***Problem Statement***
 
 1. Research the iris data set online and write a summary about it in your README. 
 2. Download the data set and add it to your repository. 
