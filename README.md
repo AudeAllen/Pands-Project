@@ -3,7 +3,7 @@
 # Table of contents
 * [1 Introduction Project](#1-introduction-project)
  	* [Problem Statement](#problem-statement)
-	* [2 Software needed to run the project ](#2-software-needed-to-run-the-project)	
+* [2 Software needed to run the project](#2-software-needed-to-run-the-project)	
 
 
 1 Introduction Project 
