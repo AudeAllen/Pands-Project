@@ -225,8 +225,11 @@ A linearly separable data set is one where the observations or data points can b
 There is a strong correlation on the sepal length and the sepal width for the Iris-Setosa. This can be seen in the correlation matrix where the correlation coefficient is 0.74. This is not the case for the other two species where the correlation coefficient is 0.5 and 0.45 for both the versicolor and virginica respectively.
 
 There is a strong correlation also between the sepal length and the petal length for the iris-virginica at 0.86 and also the Iris-versicolor at 0.75. There is also a strong correlation between the petal length and petal width for the iris- versicolor at 0.78. The least correlation is between petal length and sepal width for the iris-setosa at 0.17.
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e7c6c75abacddf614441dea46225274f48ad8d7e
 
 
 
