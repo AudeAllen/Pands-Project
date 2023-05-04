@@ -4,6 +4,7 @@
 * [1 Introduction project](#1-introduction-project)
     * [Problem Statement](#problem-statement)
 * [2 Software needed to run the project](#2-software-needed-to-run-the-project)	
+* [3 Background on the Iris Dataset](#3-background-on-the-iris-dataset)	
    
     
 
@@ -46,7 +47,8 @@ import seaborn as sns
 
 Need to fill out a bit more – discussion about pandas, matplotlib, seaborn 
 
-3.	**Background on Iris Dataset**
+3 Background on the Iris Dataset 
+
 There is a lot of information and analyses done on the Iris dataset. The British statistician Ronald Fisher published the dataset in 1936.
 As mentioned in my introduction iris dataset gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica. 	
 This dataset is a simple dataset which contains 5 variables and thus I can demonstrate my knowledge of many data science concepts using python and other tools.
