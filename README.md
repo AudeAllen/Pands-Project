@@ -10,7 +10,10 @@
     * [Summary Observations grouped by Species](#summary-observations-grouped-by-species)
     * [Output](#output)
 * [5 Analysis of Iris Dataset](#5-analysis-of-iris-dataset)    
-    * [1. Univariate](#1.-univariate)
+    * [Univariate](#univariate)
+    * [Bivariate](#bivariate)
+        * [Univariate Analysis on the Iris Dataset](#univariate-analysis-on-the-iris-dataset) 
+            * [Histogram of each variable for each species](#histogram-of-each-variable-for-each-species) 
 
 
 1 Introduction project
@@ -129,14 +132,19 @@ From looking at the summary table I have a couple of observations.
 
 
 I am going to analyse the Iris dataset using two types of analysing data 
-### ***1. Univariate***			
+
+### ***Univariate***	
+
   Probably the simplest way to analyse data. Uni means only one variable is being analysed. It does not deal with causes or regression. This type of analyses summarizes the data and finds patterns in the data – For the univariate analysis in this project I will use histograms and boxplots to describe and summarize the data.
 
-2.	**Bivariate** – Bivariate analysis means I will be using two variables to analyse a dataset. A scatterplot is a typical visualisation that would be used when doing bivariate analysis. Using a visualisation tool like a scatter plot we can see if there are any 	obvious relationship between different variables. 
+### ***Bivariate***
 
-**Univariate Analysis on the Iris Dataset**
+ Bivariate analysis means I will be using two variables to analyse a dataset. A scatterplot is a typical visualisation that would be used when doing bivariate analysis. Using a visualisation tool like a scatter plot we can see if there are any 	obvious relationship between different variables. 
 
-**Histogram of each variable for each species**
+### ***Univariate Analysis on the Iris Dataset***
+
+### ***Histogram of each variable for each species***
+
 
 I am going to analyse the data using histograms created using the Matplotlib library. A histogram can be used to illustrate the distribution of data in a visual form. It can be easy to see any unusual observations such as outliers and gaps.
 I have created a histogram in python for each of the variables in the dataset.
