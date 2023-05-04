@@ -13,7 +13,12 @@
     * [Univariate](#univariate)
     * [Bivariate](#bivariate)
         * [Univariate Analysis on the Iris Dataset](#univariate-analysis-on-the-iris-dataset) 
-            * [Histogram of each variable for each species](#histogram-of-each-variable-for-each-species) 
+            * [Histogram of each variable for each species](#histogram-of-each-variable-for-each-species)
+            * [Boxplot of each variable for each species](#boxplot-of-each-variable-for-each-species) 
+        * [Bivariate Analysis on the Iris Dataset](#bivariate-analysis-on-the-iris-dataset)    
+             * [Scatterplots of the Iris Dataset](#scatterplots-of-the-iris-dataset)
+             * [Pairplot and Correlation Matrix](#pairplot-and-correlation-matrix)
+
 
 
 1 Introduction project
@@ -194,7 +199,7 @@ From the above graphical illustrations of the data using the four variables spli
 Boxplot of each variable for each species
 A boxplot can be used for either univariate or bivariate analysis.  For my analysis I am going to use the boxplot for univariate analysis on the same variables sepal length, sepal width, petal length and petal width. The boxplot is a standardized way of displaying the distribution of data based on a five number summary (“minimum”, first quartile (Q1), median, third quartile (Q3), and “maximum”. Boxplots can show your outliers and if your data is skewed.
 
-
+### ***Boxplot of each variable for each species***
 
 **Boxplot Sepal Length**
 
@@ -218,10 +223,9 @@ A boxplot can be used for either univariate or bivariate analysis.  For my analy
 From the above graphs we can see the iris-setosa has the lowest in all measurements except sepal width where it has the largest measurements. The little diamond shape outside the boxplot is an indicator of an outlier. There are not very many outliers so it won’t have a significant impact on my analysis. The Iris-setosa has the most outliers.
 
 	
+### ***Bivariate Analysis on the Iris Dataset***
 
-**Bivariate Analysis on the Iris Dataset**
-
-**Scatterplots of the Iris Dataset**
+### ***Scatterplots of the Iris Dataset***
 
 A scatter plot is a useful plot as it visually shows how the different variables or features in the data set correlate with one another.  It is a graph of the ordered pairs of two variables. One variable is plotted on the x-axis while the other variable is plotted on the y-axis. A scatter plot can be used to visualize relationships between numerical variables such as the petal measurements and the sepal measurements in the Iris data set.
 There is a function in the seaborn library called the Pairplot() function. This function plots pairwise relationships between variables with the use of scatterplots. It is a very useful visual to see correlations between certain variables. We can also see if the data is linearly separable which we know it is from previous discussions. 
@@ -235,8 +239,8 @@ The correlation matrix is contained in my analysis.py python program. See below.
 
 ![image](https://user-images.githubusercontent.com/123590406/232863084-933b98de-ea95-4d59-bd68-4e7e55014977.png)
 
+### ***Pairplot and Correlation Matrix***
 
-**Correlation Matrix**
 
 ![image](https://user-images.githubusercontent.com/123590406/232863145-d0696667-fbfe-4577-99ac-973a7a7e3958.png)
 
@@ -253,13 +257,6 @@ A linearly separable data set is one where the observations or data points can b
 There is a strong correlation on the sepal length and the sepal width for the Iris-Setosa. This can be seen in the correlation matrix where the correlation coefficient is 0.74. This is not the case for the other two species where the correlation coefficient is 0.5 and 0.45 for both the versicolor and virginica respectively.
 
 There is a strong correlation also between the sepal length and the petal length for the iris-virginica at 0.86 and also the Iris-versicolor at 0.75. There is also a strong correlation between the petal length and petal width for the iris- versicolor at 0.78. The least correlation is between petal length and sepal width for the iris-setosa at 0.17.
-
-
-
-
-
-
-
 
 
 
