@@ -5,8 +5,12 @@
     * [Problem Statement](#problem-statement)
 * [2 Software needed to run the project](#2-software-needed-to-run-the-project)	
 * [3 Background on the Iris Dataset](#3-background-on-the-iris-dataset)	
-   
-    
+* [4 Basic Analysis using Panda Dataframe](#4-basic-analysis-using-panda-dataframe)
+    * [Summary Observations on Overall Summary Statistics](#summary-observations-on-overall-summary-statistics)
+    * [Summary Observations grouped by Species](#summary-observations-grouped-by-species)
+    * [Output](#output)
+* [5 Analysis of Iris Dataset](#5-analysis-of-iris-dataset)    
+    * [1. Univariate](#1.-univariate)
 
 
 1 Introduction project
@@ -48,6 +52,7 @@ import seaborn as sns
 Need to fill out a bit more – discussion about pandas, matplotlib, seaborn 
 
 3 Background on the Iris Dataset 
+======
 
 There is a lot of information and analyses done on the Iris dataset. The British statistician Ronald Fisher published the dataset in 1936.
 As mentioned in my introduction iris dataset gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica. 	
@@ -58,8 +63,9 @@ See pictures of each species of flower below.
 ![image](https://user-images.githubusercontent.com/123590406/232835878-5c2764b0-5fec-416c-a7ac-4b81166d4d32.png)
  	
 
+4 Basic Analysis using Panda Dataframe
+======
 
-**Basic Analysis using Panda Dataframe**
 First thing I need to do is read in the Iris dataset. It is in .csv format. The tool I am using for this is Visual studio code. All of my code and files will be uploaded to github after I have made any changes.
 ![image](https://user-images.githubusercontent.com/123590406/232836070-966b1276-e820-4725-9e54-5b6a0449e5b5.png)
 
@@ -81,7 +87,9 @@ min - the minimum value
 max - the maximum value
 
 
-**Summary Observations on Overall Summary Statistics**
+
+### ***Summary Observations on Overall Summary Statistics***
+
 
 ![image](https://user-images.githubusercontent.com/123590406/232836232-908f2561-a136-4d65-827f-bf75eb76b442.png)
 
@@ -96,13 +104,16 @@ max - the maximum value
 -	Max – Sepallength has the largest measurement for all four species at 7.9. Petalwidth has the lowest at 2.5. Again what we can see from the data is that the variable with the largest difference between the min and max value is again petallength which ties into the standard deviation being so high.
 
 ![image](https://user-images.githubusercontent.com/123590406/232836492-c260c432-d437-4c88-808d-a0f704537838.png)
- 	
-**Summary Observations grouped by Species**
+
+### ***Summary Observations grouped by Species***
+
+
 Using Pandas dataframe again this summary by species and variable can be completed. The dataframe is grouped by species and using the describe method again the summary statistics are output. The output of the summary statistics grouped by species is output to a text file called ‘SummarySpeciesIrisVariable.txt’. See below for sample code and output.
 IRIS_df_all = (df.groupby("species").describe())
 IRIS_df_all.to_string('SummarybySpeciesIrisVariable.txt')
 
-**Output**
+### ***Output***
+
 Ouput of the group describe method is below. For each variable sepallength, sepalwidth, petallength and petalwidth count, mean, std, min, 25%, 50%, 75% and max statistics are calculated. I am going to briefly go through the summary table but I think looking at graphs and visual aids might might more sense when trying to analyse the data.
 
 ![image](https://user-images.githubusercontent.com/123590406/232836550-cf2e40d4-de5f-4861-a000-4dfbdbc5c342.png)
@@ -113,11 +124,13 @@ From looking at the summary table I have a couple of observations.
 -	Iris-virginica species is characterized by the highest dispersion of all variables except for sepal width.
 -	The summary table above is very informative but I am going to display some graphs and visuals in order to show what the summary table does not show clearly – similarities between the species and marked differences.
 
+5 Analysis of Iris Dataset
+======
 
-**Analysis of Iris Dataset**
 
-I am going to analyse the Iris dataset using two types of analysing data 			
-1.	**Univariate** – Probably the simplest way to analyse data. Uni means only one variable is being analysed. It does not deal with causes or regression. This type of analyses summarizes the data and finds patterns in the data – For the univariate analysis in this project I will use histograms and boxplots to describe and summarize the data.
+I am going to analyse the Iris dataset using two types of analysing data 
+### ***1. Univariate***			
+  Probably the simplest way to analyse data. Uni means only one variable is being analysed. It does not deal with causes or regression. This type of analyses summarizes the data and finds patterns in the data – For the univariate analysis in this project I will use histograms and boxplots to describe and summarize the data.
 
 2.	**Bivariate** – Bivariate analysis means I will be using two variables to analyse a dataset. A scatterplot is a typical visualisation that would be used when doing bivariate analysis. Using a visualisation tool like a scatter plot we can see if there are any 	obvious relationship between different variables. 
 
