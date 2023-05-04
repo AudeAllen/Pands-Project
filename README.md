@@ -1,10 +1,10 @@
-**Analysis on the Iris Dataset**
+# Analysis on the Iris Dataset
 
-# Table of contents
+## Table of contents
 * [1 Introduction project](#1-introduction-project)
     * [Problem Statement](#problem-statement)
 * [2 Software needed to run the project](#2-software-needed-to-run-the-project)	
-* [3 Background on the Iris Dataset](#3-background-on-the-iris-dataset)	
+* [3 Background on   the Iris Dataset](#3-background-on-the-iris-dataset)	
 * [4 Basic Analysis using Panda Dataframe](#4-basic-analysis-using-panda-dataframe)
     * [Summary Observations on Overall Summary Statistics](#summary-observations-on-overall-summary-statistics)
     * [Summary Observations grouped by Species](#summary-observations-grouped-by-species)
@@ -18,7 +18,8 @@
         * [Bivariate Analysis on the Iris Dataset](#bivariate-analysis-on-the-iris-dataset)    
              * [Scatterplots of the Iris Dataset](#scatterplots-of-the-iris-dataset)
              * [Pairplot and Correlation Matrix](#pairplot-and-correlation-matrix)
-
+* [6 Conclusion](#6-conclusion)             
+* [7 References](#7-references)   
 
 
 1 Introduction project
@@ -51,13 +52,21 @@ I hope my analysis of this dataset will help give me more insight and knowledge 
 -	Visual Studio Code
 -	Python 3
 -	Github - https://github.com/AudeAllen/Pands-Project.git
-How to run Python code 
-import numpy as np  
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-Need to fill out a bit more – discussion about pandas, matplotlib, seaborn 
+How to run Python code - 
+- Python script is called analysis.py
+- To run analysis.py go into Visual studio code > In the terminal window type in command cd C:\Users\audreyallen\Desktop\Pands1\Pands-Project as this is the location of the project
+- Once in the correct directory type in analysis.py and hit enter
+- This will run the script and create all the graphs and visual aids for this project
+- I have uploaded all of my project files to my github respository.  Git is a version control system that I use in this project.
+- My git address is https://github.com/AudeAllen/Pands-Project.git
+
+The below libraries/packages were imported to aid analysis on the dataset
+-import numpy as np - numpy is a package for scientific computing in python  
+-import pandas as pd - python package that is used for data analysis
+-import matplotlib.pyplot as plt - data visualisation tool 
+-import seaborn as sns - data visualisation tool
+
 
 3 Background on the Iris Dataset 
 ======
@@ -259,9 +268,21 @@ There is a strong correlation on the sepal length and the sepal width for the Ir
 There is a strong correlation also between the sepal length and the petal length for the iris-virginica at 0.86 and also the Iris-versicolor at 0.75. There is also a strong correlation between the petal length and petal width for the iris- versicolor at 0.78. The least correlation is between petal length and sepal width for the iris-setosa at 0.17.
 
 
+6 Conclusion
+======
 
+Much of modern statistical and machine learning is based upon the work of R.A Fisher in the 20th century. He is often referred to as the father of modern statistics. Fisher developed the linear discriminant model based on the combination of the four measurement features in the Iris dataset. This is a  method used in statistics and other fields, to find a linear combination of features that characterizes or separates two or more classes of objects or events.
 
-**References**
+The dataset became a test case for classification methods in the machine learning and the pattern recognition field because one class of the three Iris species in the data set is linearly separable from the other two classes while the other two classes are not linearly separable from each other.
+
+The iris dataset is a very basic dataset with a small number of variables and 150 total observations. It is the perfect dataset to start or explore data analysis and the tools that can be used to assist in that analysis through python code and various libraries. What we can see from my analysis is that the iris-setosa is linearly separable from the other two species. This is apparent in the pairplot and the correlation matrix. The standard deviation of the iris-setosa is also much less variable that that of the versicolor and virginica.
+
+The average petal width of the Setosa is also much smaller than the average petal widths of the other two species. The average or mean of all the variables are lower with the setosa except for sepal width where the average is larger than the versicolor and virginica.
+
+There is some overlap between the iris-virginica and the iris-versicolor so these species are not easily distinguished from one another.   
+
+7 References
+======
 
 http://rstudio-pubs-static.s3.amazonaws.com/450733_9a472ce9632f4ffbb2d6175aaaee5be6.html
 
@@ -272,10 +293,15 @@ https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 
 https://kindsonthegenius.com/blog/what-is-a-linear-seperator-what-is-a-hyperplane-simple-and-brief-explanation/#:~:text=First%2C%20the%20concept%20of%20linear,other%20side%20of%20the%20line
 
-https://rpubs.com/Karolina_G/848706  - show summary statistics and graphs
-https://levelup.gitconnected.com/unveiling-the-mysteries-of-the-iris-dataset-a-comprehensive-analysis-and-machine-learning-f5c4f9dbcd6d#:~:text=The%20histogram%20provides%20insights%20into,at%20around%200.2%20to%200.3
+https://rpubs.com/Karolina_G/848706  
+
+https://levelup.gitconnected.com/
+
+unveiling-the-mysteries-of-the-iris-dataset-a-comprehensive-analysis-and-machine-learning-f5c4f9dbcd6d#:~:text=The%20histogram%20provides%20insights%20into,at%20around%200.2%20to%200.3
 
 https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+
+https://www.angela1c.com/projects/iris_project/summary_and_conclusions/
 
 
 
