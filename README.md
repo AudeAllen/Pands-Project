@@ -186,7 +186,7 @@ Plots can show how variables in the Iris data set relate to each other and trend
 The above histogram for sepal length shows the overall distribution of the variable sepal length across all species of Iris Flower. What we can see is that the range goes from the lowest value which is 4.3 to the highest value of 7.9 with Iris-Setosa having the lowest measurements for sepal length and iris-virginica having the highest. Both iris-versicolor and iris-virginica overlap on measurements and seem interlinked whereas iris-setosa is out on its own having much lower measurements.	
 
 
-**Sepal Width Histogram **
+**Sepal Width Histogram**
 
 ![image](https://user-images.githubusercontent.com/123590406/232836736-2d07f115-1149-4bc5-90bc-2b7fe8da15bd.png)
 
@@ -203,7 +203,7 @@ Observations
 Iris-setosa is linearly separable from the other species when looking at the univariate analysis of petal length. There is a significant gap between the measurements for petal length for the iris-setosa and iris-versicolor and iris-virginica. The iris-Setosa species has the lowest measurements for petal measurement at 1.0 with iris-virginica having the max measurement for this variable at 6.9. There is some overlap between versicolor and virginica but iris–setosa is separated completely from the other two species.
 
 
-**Petal Width Histogram **
+**Petal Width Histogram**
 
 ![image](https://user-images.githubusercontent.com/123590406/232836909-7f5cb641-c280-435e-bebb-8091f67d4846.png)
 
@@ -260,7 +260,7 @@ The correlation matrix is contained in my analysis.py python program. See below.
 
 ![image](https://user-images.githubusercontent.com/123590406/232863145-d0696667-fbfe-4577-99ac-973a7a7e3958.png)
 
-**Pair Plot **
+**Pair Plot**
 
 The Pairplot has been output to a .png file called Scatterplot.png.  See below screenshot.
 
