@@ -101,14 +101,14 @@ IRIS_df.to_string('OverallIrisVariableSummary.txt')
 
 Summary Columns returned
 
-count - The number of not-empty values
-mean - The average (mean) value
-std - The standard deviation
-min - the minimum value
-25% - The 25% percentile - how many of the values are less than the given percentile – 25%
-50% - The 50% percentile - how many of the values are less than the given percentile – 50%
-75% - The 75% percentile - how many of the values are less than the given percentile – 75%
-max - the maximum value
+-count - The number of not-empty values
+-mean - The average (mean) value
+-std - The standard deviation
+-min - the minimum value
+-25% - The 25% percentile - how many of the values are less than the given percentile – 25%
+-50% - The 50% percentile - how many of the values are less than the given percentile – 50%
+-75% - The 75% percentile - how many of the values are less than the given percentile – 75%
+-max - the maximum value
 
 
 
