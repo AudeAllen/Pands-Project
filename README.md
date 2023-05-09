@@ -87,13 +87,20 @@ First thing I need to do is read in the Iris dataset. It is in .csv format. The 
 ![image](https://user-images.githubusercontent.com/123590406/232836070-966b1276-e820-4725-9e54-5b6a0449e5b5.png)
 
 To run my python program go into Visual Studio Code and go to the directory C:\Users\audreyallen\Desktop\Pands1\Pands-Project and type in py analysis.py.
-Using the Pandas dataframe describe method I can display the overall summary statistics for all four variables for all species of the Iris plant.  The describe () method returns 	statistics on the numerical data in the .csv file.
+Using the Pandas dataframe describe method I can display the overall summary statistics for all four variables for all species of the Iris plant. 
+
+The describe () method returns 	statistics on the numerical data in the .csv file.
+
 df = pd.DataFrame(data)
 data.describe()
+
 The summary is output to a text file called ‘OverallIrisVariableSummary.txt’
+
 IRIS_df = (df.describe())
 IRIS_df.to_string('OverallIrisVariableSummary.txt')
+
 Summary Columns returned
+
 count - The number of not-empty values
 mean - The average (mean) value
 std - The standard deviation
