@@ -62,10 +62,10 @@ How to run Python code -
 - My git address is https://github.com/AudeAllen/Pands-Project.git
 
 The below libraries/packages were imported to aid analysis on the dataset
--import numpy as np - numpy is a package for scientific computing in python  
--import pandas as pd - python package that is used for data analysis
--import matplotlib.pyplot as plt - data visualisation tool 
--import seaborn as sns - data visualisation tool
+- import numpy as np - numpy is a package for scientific computing in python  
+- import pandas as pd - python package that is used for data analysis
+- import matplotlib.pyplot as plt - data visualisation tool 
+- import seaborn as sns - data visualisation tool
 
 
 3 Background on the Iris Dataset 
@@ -101,14 +101,14 @@ IRIS_df.to_string('OverallIrisVariableSummary.txt')
 
 Summary Columns returned
 
--count - The number of not-empty values
--mean - The average (mean) value
--std - The standard deviation
--min - the minimum value
--25% - The 25% percentile - how many of the values are less than the given percentile – 25%
--50% - The 50% percentile - how many of the values are less than the given percentile – 50%
--75% - The 75% percentile - how many of the values are less than the given percentile – 75%
--max - the maximum value
+- count - The number of not-empty values
+- mean - The average (mean) value
+- std - The standard deviation
+- min - the minimum value
+- 25% - The 25% percentile - how many of the values are less than the given percentile – 25%
+- 50% - The 50% percentile - how many of the values are less than the given percentile – 50%
+- 75% - The 75% percentile - how many of the values are less than the given percentile – 75%
+- max - the maximum value
 
 
 
