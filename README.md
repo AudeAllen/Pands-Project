@@ -183,7 +183,9 @@ Plots can show how variables in the Iris data set relate to each other and trend
 
  
 **Observations**
-The above histogram for sepal length shows the overall distribution of the variable sepal length across all species of Iris Flower. What we can see is that the range goes from the lowest value which is 4.3 to the highest value of 7.9 with Iris-Setosa having the lowest measurements for sepal length and iris-virginica having the highest. Both iris-versicolor and iris-virginica overlap on measurements and seem interlinked whereas iris-setosa is out on its own having much lower measurements.	
+The above histogram for sepal length shows the overall distribution of the variable sepal length across all species of Iris Flower. What we can see is that the range goes from the lowest value which is 4.3 to the highest value of 7.9 with Iris-Setosa having the lowest measurements for sepal length and iris-virginica having the highest. Both iris-versicolor and iris-virginica overlap on measurements and seem interlinked whereas iris-setosa is out on its own having much lower measurements. 
+
+The histogram suggests that the distribution of sepal length in the iris dataset is approximately normal, with the majority of values falling between 5.0 and 7.0.
 
 
 **Sepal Width Histogram**
@@ -202,6 +204,8 @@ The histogram above analyses the variable sepal width. Unlike sepal length the m
 Observations
 Iris-setosa is linearly separable from the other species when looking at the univariate analysis of petal length. There is a significant gap between the measurements for petal length for the iris-setosa and iris-versicolor and iris-virginica. The iris-Setosa species has the lowest measurements for petal measurement at 1.0 with iris-virginica having the max measurement for this variable at 6.9. There is some overlap between versicolor and virginica but iris–setosa is separated completely from the other two species.
 
+This histogram also displays the distribution of petal length values in the iris dataset. The plot indicates that the majority of iris flowers have a petal length between 1.0 and 1.8, with fewer flowers having shorter or longer petals.
+
 
 **Petal Width Histogram**
 
@@ -212,7 +216,10 @@ Iris-setosa is linearly separable from the other species when looking at the uni
 Again the iris-setosa is linearly separable from the other two species in the above histogram. The iris-setosa again having the min measurement for petal width at 0.1 and virginica having the max measurement at 2.5. 
 From the above graphical illustrations of the data using the four variables split by class we can ascertain that by analysing petal width and length we can separate at least the iris-setosa from the other two species.
 
-Boxplot of each variable for each species
+Again similar to the other histograms this displays the distribution of petal width within the iris dataset. It shows that the majority of flowers have small petal widths with the exception of a few. These largely exist in the iris-setosa species.
+
+**Boxplot of each variable for each species**
+
 A boxplot can be used for either univariate or bivariate analysis.  For my analysis I am going to use the boxplot for univariate analysis on the same variables sepal length, sepal width, petal length and petal width. The boxplot is a standardized way of displaying the distribution of data based on a five number summary (“minimum”, first quartile (Q1), median, third quartile (Q3), and “maximum”. Boxplots can show your outliers and if your data is skewed.
 
 ### ***Boxplot of each variable for each species***
